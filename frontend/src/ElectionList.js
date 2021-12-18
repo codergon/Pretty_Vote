@@ -133,9 +133,6 @@ const ElectionList = () => {
       const signedTxn = await myAlgoWallet.signTransaction(txn.toByte());
       await algodClient.sendRawTransaction(signedTxn.blob).do();
 
-      // close modal.
-      dispatch({ type: "close_vote_modal" });
-
       // alert success
       alert("You have successfully placed your vote for this election");
       window.location.reload();

@@ -75,7 +75,7 @@ const TopNavigationBar = ({ darkTheme }) => {
   }, []);
 
   const myAlgoConnect = async () => {
-    const myAlgoWallet = new MyAlgoConnect();
+    const myAlgoWallet = new MyAlgoConnect({ shouldSelectOneAccount: false });
 
     try {
       const accounts = await myAlgoWallet.connect({

@@ -14,11 +14,13 @@ const GetCommittedAmount = () => {
 
   const getIt = async () => {
     try {
-      axios.get(`${URL}/committed/${userAddress}`).then((response) => {
-        if (!!response?.data?.data?.amount) {
-          setAmt(response.data.data.amount);
-        }
-      });
+      if (!!userAddress) {
+        axios.get(`${URL}/committed/${userAddress}`).then((response) => {
+          if (!!response?.data?.data?.amount) {
+            setAmt(response.data.data.amount);
+          }
+        });
+      }
     } catch (error) {
       console.log(error);
     }
