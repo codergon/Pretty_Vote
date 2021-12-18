@@ -47,7 +47,7 @@ const ElectionList = () => {
         {
           address: "DQ2NPLGQ3CV3QAPMS7KHIRUNUF2ZSTYRT5SZGDCPLB7VPC5OSSLCI5H7DM",
           image: "",
-          name: "75 million Choice  dispensedeach year for the next 10 years",
+          name: "75 million Choice  dispensed each year for the next 10 years",
         },
 
         {
