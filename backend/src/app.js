@@ -143,9 +143,9 @@ app.get("/results/:id", async (req, res) => {
       // loop through and update the amount
       txns?.forEach((txn) => {
         const transaction = txn["asset-transfer-transaction"];
-        console.log(transaction);
         amount += transaction["amount"];
       });
+
       results[candidate.address] = amount / 100;
     }
 
