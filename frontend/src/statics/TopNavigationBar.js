@@ -296,7 +296,6 @@ const TopNavigationBar = ({ darkTheme }) => {
             </div>
           )}
         </div>
-        {/*  */}
       </div>
 
       <div
