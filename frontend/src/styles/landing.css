@@ -6,7 +6,6 @@
   color: var(--txt-alt);
 
   display: flex;
-  font-family: "Barlow", sans-serif;
   align-items: center;
   flex-direction: column;
 }
@@ -17,7 +16,7 @@
 
   width: 500px;
   max-width: 85vw;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
 
 .landing .Marquee__Wrapper {
@@ -38,7 +37,6 @@
   line-height: 45px;
   margin-bottom: 30px;
   letter-spacing: 0.7px;
-  font-family: "Barlow", sans-serif;
 }
 
 .land_item1 .suby {
@@ -46,13 +44,16 @@
   display: flex;
   font-weight: 400;
   margin: 13px 0px;
-  line-height: 24px;
+  line-height: 23px;
   letter-spacing: 0.3px;
-  font-family: "Barlow", sans-serif;
 }
 
 .light_theme .land_item1 .hdy {
   font-weight: 500;
+}
+.light_theme .land_item1 .suby {
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .land_item2 {

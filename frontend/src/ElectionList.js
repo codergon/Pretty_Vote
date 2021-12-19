@@ -329,7 +329,7 @@ const ElectionList = () => {
       <div className="ptt_elt">
         <div className="ptt_elt_inn">
           <div className="ptt_hd">
-            <p>Participate Vote0 Process</p>
+            <p>Participate in Vote 0 Election</p>
           </div>
 
           <ul className="card_list">
@@ -364,7 +364,7 @@ const ElectionList = () => {
     <div className="ptt_elt">
       <div className="ptt_elt_inn">
         <div className="ptt_hd">
-          <p>Participate Vote0 Process</p>
+          <p>Participate in Vote 0 Election</p>
         </div>
 
         <ul className="card_list">

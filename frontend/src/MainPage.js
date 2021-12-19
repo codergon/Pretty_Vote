@@ -1,9 +1,12 @@
 import { useSelector } from "react-redux";
 import Home from "./Home";
+
+import Faq from "./faq";
 import { useWindowSize } from "@react-hook/window-size";
 import { NavLink, Route, Routes } from "react-router-dom";
 import TopNavigationBar from "./statics/TopNavigationBar";
 import BottomNavigationBar from "./statics/BottomNavigationBar";
+import ElectionList from "./ElectionList";
 
 const MainPage = () => {
   const [width] = useWindowSize();
@@ -32,11 +35,13 @@ const MainPage = () => {
         }}
       />
 
-      <TopNavigationBar darkTheme={darkTheme} />
+      <TopNavigationBar darkTheme={darkTheme} NavLink={NavLink} />
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/participate" element={<ElectionList />} />
       </Routes>
 
       {width <= 850 && (
